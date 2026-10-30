@@ -1,0 +1,54 @@
+# Pipeline Configuration: Soil Microbiome Environmental Discrimination under Spatial Cross-Validation
+
+project:
+  name: "Soil Microbiome Environmental Discrimination Pipeline"
+  version: "0.1.0"
+  random_seed: 42
+
+paths:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  mock_dir: "data/mock"
+  results_dir: "results"
+  paired_manifest: "data/processed/paired_sample_manifest.csv"
+  mangrove_manifest: "data/processed/mangrove_prjna283936_manifest.csv"
+
+thresholds:
+  sra:
+    min_reads_16s: 10000
+    min_reads_its: 500
+  srs_normalization:
+    target_depth_16s: 40109
+    target_depth_its: 502
+  edaphic_bounds:
+    ph_min: 2.0
+    ph_max: 11.0
+    oc_min: 0.0
+    n_min: 0.0
+    texture_tolerance_pct: 5.0
+  spatial:
+    europe_lat_min: 34.0
+    europe_lat_max: 72.0
+    europe_lon_min: -12.0
+    europe_lon_max: 35.0
+
+pairing:
+  dedup_strategy: "keep_resampled"  # Drop initial barcodes 59, 102, 113, 116; retain 138, 601, 717, 258
+  resampled_pairs:
+    59: 138
+    102: 601
+    113: 717
+    116: 258
+
+categories:
+  macro_classes:
+    - "Cropland"
+    - "Grassland"
+    - "Woodland"
+  fine_classes:
+    - "Non-permanent crops"
+    - "Permanent crops"
+    - "Intensive grassland"
+    - "Extensive grassland"
+    - "Broadleaved forests"
+    - "Coniferous forests"

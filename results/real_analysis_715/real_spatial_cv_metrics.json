@@ -1,0 +1,92 @@
+{
+  "cohort_size": 715,
+  "target_classes": [
+    "Broadleaved forests",
+    "Coniferous forests",
+    "Extensive grasslands",
+    "Intensive grassland",
+    "Non-permanent crops",
+    "Permanent crops"
+  ],
+  "chance_level": 0.16666666666666666,
+  "mean_balanced_accuracy": {
+    "set_a_16s": 0.4512964015999382,
+    "set_b_its": 0.46667165226158297,
+    "set_c_integrated": 0.46044517124146156
+  },
+  "fold_balanced_accuracy": {
+    "set_a_16s": [
+      0.3617250402576489,
+      0.4289171131521878,
+      0.4871169108669109,
+      0.5189393939393939,
+      0.4597835497835498
+    ],
+    "set_b_its": [
+      0.38720094317920406,
+      0.46463772660911956,
+      0.5210271672771672,
+      0.517288961038961,
+      0.44320346320346315
+    ],
+    "set_c_integrated": [
+      0.39043737060041406,
+      0.4004567617751697,
+      0.5043818681318681,
+      0.5347132034632034,
+      0.4722366522366523
+    ]
+  },
+  "confidence_intervals_95": {
+    "set_a_16s": {
+      "mean": 0.4512964015999382,
+      "median": 0.4597835497835498,
+      "ci_lower": 0.4009484440680093,
+      "ci_upper": 0.4943792318792319,
+      "std": 0.023756867063284438
+    },
+    "set_b_its": {
+      "mean": 0.46667165226158297,
+      "median": 0.46463772660911956,
+      "ci_lower": 0.42080245519375953,
+      "ci_upper": 0.507525046431825,
+      "std": 0.021986240886337723
+    },
+    "set_c_integrated": {
+      "mean": 0.46044517124146156,
+      "median": 0.4722366522366523,
+      "ci_lower": 0.4127587646766413,
+      "ci_upper": 0.509722582972583,
+      "std": 0.024766503278117493
+    }
+  },
+  "permanova": {
+    "16s": {
+      "f_statistic": 34.44446012917348,
+      "p_value": 0.001,
+      "r2": 0.19543570393037246,
+      "permutations": 999
+    },
+    "its": {
+      "f_statistic": 12.10677030963097,
+      "p_value": 0.001,
+      "r2": 0.07866301323375487,
+      "permutations": 999
+    }
+  },
+  "hypothesis_test_h0": {
+    "mean_delta": 0.004383675637298801,
+    "w_statistic": 10.0,
+    "p_value": 0.3125,
+    "h0_rejected": false,
+    "selected_marker": [
+      "ITS",
+      "16S",
+      "16S",
+      "ITS",
+      "16S"
+    ],
+    "comparator_selected_on": "training",
+    "conclusion": "H0 ACCEPTED: Multi-marker integration does not statistically outperform the marker selected on the training partition."
+  }
+}

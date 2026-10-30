@@ -1,0 +1,185 @@
+{
+  "set_a_16s": {
+    "matrix": [
+      [
+        34,
+        29,
+        22,
+        0,
+        10,
+        4
+      ],
+      [
+        22,
+        121,
+        11,
+        0,
+        3,
+        3
+      ],
+      [
+        8,
+        4,
+        88,
+        0,
+        22,
+        6
+      ],
+      [
+        1,
+        0,
+        2,
+        0,
+        8,
+        7
+      ],
+      [
+        5,
+        2,
+        31,
+        0,
+        187,
+        39
+      ],
+      [
+        1,
+        1,
+        2,
+        0,
+        22,
+        20
+      ]
+    ],
+    "classes": [
+      "Broadleaved forests",
+      "Coniferous forests",
+      "Extensive grasslands",
+      "Intensive grassland",
+      "Non-permanent crops",
+      "Permanent crops"
+    ],
+    "total_samples": 715
+  },
+  "set_b_its": {
+    "matrix": [
+      [
+        36,
+        31,
+        25,
+        0,
+        6,
+        1
+      ],
+      [
+        23,
+        128,
+        6,
+        0,
+        2,
+        1
+      ],
+      [
+        8,
+        12,
+        80,
+        0,
+        25,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        11,
+        4
+      ],
+      [
+        3,
+        4,
+        27,
+        0,
+        207,
+        23
+      ],
+      [
+        3,
+        0,
+        6,
+        0,
+        20,
+        17
+      ]
+    ],
+    "classes": [
+      "Broadleaved forests",
+      "Coniferous forests",
+      "Extensive grasslands",
+      "Intensive grassland",
+      "Non-permanent crops",
+      "Permanent crops"
+    ],
+    "total_samples": 715
+  },
+  "set_c_integrated": {
+    "matrix": [
+      [
+        32,
+        29,
+        25,
+        0,
+        10,
+        3
+      ],
+      [
+        24,
+        123,
+        6,
+        0,
+        3,
+        4
+      ],
+      [
+        6,
+        6,
+        88,
+        0,
+        23,
+        5
+      ],
+      [
+        1,
+        0,
+        2,
+        0,
+        9,
+        6
+      ],
+      [
+        4,
+        3,
+        19,
+        1,
+        200,
+        37
+      ],
+      [
+        2,
+        0,
+        2,
+        0,
+        21,
+        21
+      ]
+    ],
+    "classes": [
+      "Broadleaved forests",
+      "Coniferous forests",
+      "Extensive grasslands",
+      "Intensive grassland",
+      "Non-permanent crops",
+      "Permanent crops"
+    ],
+    "total_samples": 715
+  }
+}

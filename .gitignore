@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Tooling & Agent caches
+.xgrok/
+AGENTS.md
+.agents/
+
+# Sensitive files
+.env
+
+# Relatórios e dashboards gerados em HTML (conforme solicitação)
+results/*.html
+*.html
+
+# Metadados oficiais brutos e downloads pesados do ESDAC / Nature
+METADATA_LUCAS18*
+data/METADATA_LUCAS18*
+data/downloads/
+
+# PDFs da proposta do pós-doutorado e extrações temporárias
+*.pdf
+PROJETO*.pdf
+docs/_revised_pdf_extract.txt
+
+# Sistema operacional
+Thumbs.db
+Desktop.ini
+.DS_Store

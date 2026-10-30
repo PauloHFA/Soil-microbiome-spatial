@@ -1,0 +1,159 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SoilMicrobiomeSampleManifestSchema",
+  "description": "Validation schema and variable dictionary for LUCAS / ESDAC paired multi-marker sample manifests.",
+  "type": "object",
+  "required": [
+    "sample_id",
+    "barcode_id",
+    "site_id",
+    "latitude",
+    "longitude",
+    "land_cover",
+    "land_cover_code",
+    "sra_16s_run",
+    "sra_its_run",
+    "esdac_ph",
+    "esdac_oc",
+    "esdac_n",
+    "esdac_clay",
+    "esdac_silt",
+    "esdac_sand"
+  ],
+  "properties": {
+    "sample_id": {
+      "type": "string",
+      "pattern": "^LUCAS_\\d+$",
+      "description": "Unique biological sample identifier, e.g. LUCAS_92"
+    },
+    "barcode_id": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 885,
+      "description": "Physical LUCAS topsoil barcode number"
+    },
+    "site_id": {
+      "type": "string",
+      "description": "Canonical spatial group key resolving re-sampled duplicates"
+    },
+    "point_id": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "LUCAS European grid point ID"
+    },
+    "latitude": {
+      "type": "number",
+      "minimum": -90.0,
+      "maximum": 90.0,
+      "description": "WGS84 GPS latitude in decimal degrees"
+    },
+    "longitude": {
+      "type": "number",
+      "minimum": -180.0,
+      "maximum": 180.0,
+      "description": "WGS84 GPS longitude in decimal degrees"
+    },
+    "land_cover": {
+      "type": "string",
+      "enum": ["Cropland", "Grassland", "Woodland"],
+      "description": "Target macro land cover classification"
+    },
+    "macro_land_cover": {
+      "type": "string",
+      "enum": ["Cropland", "Grassland", "Woodland"],
+      "description": "Synonymous macro land cover classification"
+    },
+    "fine_land_cover": {
+      "type": "string",
+      "description": "6-class fine land cover classification (Labouyrie et al. 2023)"
+    },
+    "land_cover_code": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5,
+      "description": "Categorical integer label for supervised learning"
+    },
+    "sra_16s_run": {
+      "type": "string",
+      "pattern": "^SRR\\d+$",
+      "description": "Selected bacterial 16S SRA run accession"
+    },
+    "sra_its_run": {
+      "type": "string",
+      "pattern": "^SRR\\d+$",
+      "description": "Selected fungal ITS SRA run accession"
+    },
+    "reads_16s": {
+      "type": "integer",
+      "minimum": 10000,
+      "description": "Illumina 16S raw read depth"
+    },
+    "reads_its": {
+      "type": "integer",
+      "minimum": 500,
+      "description": "PacBio ITS raw circular consensus read depth"
+    },
+    "esdac_ph": {
+      "type": "number",
+      "minimum": 2.0,
+      "maximum": 11.0,
+      "description": "Soil pH measured in H2O"
+    },
+    "ph_in_cacl2": {
+      "type": "number",
+      "minimum": 2.0,
+      "maximum": 10.0,
+      "description": "Soil pH measured in 0.01M CaCl2"
+    },
+    "esdac_oc": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 600.0,
+      "description": "Organic carbon content in g/kg"
+    },
+    "esdac_n": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 40.0,
+      "description": "Total nitrogen content in g/kg"
+    },
+    "c_n_ratio": {
+      "type": "number",
+      "minimum": 1.0,
+      "maximum": 80.0,
+      "description": "Carbon to nitrogen stoichiometric ratio"
+    },
+    "esdac_clay": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "description": "Clay particle fraction percentage (< 0.002 mm)"
+    },
+    "esdac_silt": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "description": "Silt particle fraction percentage (0.002 - 0.05 mm)"
+    },
+    "esdac_sand": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "description": "Sand particle fraction percentage (0.05 - 2.0 mm)"
+    },
+    "bulk_density": {
+      "type": "number",
+      "minimum": 0.2,
+      "maximum": 2.5,
+      "description": "Dry soil bulk density in g/cm³"
+    },
+    "qc_status": {
+      "type": "string",
+      "description": "Quality audit status (PASS or failure reason)"
+    },
+    "include_in_core": {
+      "type": "boolean",
+      "description": "Inclusion flag for core analytical cohort (715 sites)"
+    }
+  }
+}
