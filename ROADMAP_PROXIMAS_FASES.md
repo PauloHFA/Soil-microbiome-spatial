@@ -1,9 +1,6 @@
 # Roadmap Metodológico: Conclusão da Fase 1 e Planejamento das Fases Posteriores
 
-**Pesquisadores:** Dra. Bianca e Dr. Ulrich  
-**Laboratório:** Laboratório de Micologia e Metagenômica Ambiental (LAMA)  
-**Instituição:** Centro de Biotecnologia (CBiotec) · Universidade Federal da Paraíba (UFPB)  
-**Projeto de Pós-Doutorado (2026–2028)**
+Documento técnico de planejamento metodológico para a esteira de bioinformática e modelagem espacial de microbiomas e atributos edáficos de solo a partir de dados abertos observados.
 
 ---
 
@@ -32,23 +29,22 @@ A presente fase conclui com êxito o estabelecimento da esteira analítica e a v
   - PERMANOVA multivariada (Anderson 2001, 499 permutações): o pH explica 18,22% da variação beta bacteriana ($p = 0,002$), mas apenas 3,69% da fúngica.
 - [x] **Qualidade de Software & Reprodutibilidade:**
   - Suíte com **328 testes automatizados** passando com 100% de sucesso (`pytest`).
-  - Relatório técnico-científico interativo ([`results/RELATORIO_TECNICO_CIENTIFICO.html`](results/RELATORIO_TECNICO_CIENTIFICO.html)).
-  - Painel analítico de modelagem ([`results/dashboard_report_715_real.html`](results/dashboard_report_715_real.html)).
+  - Relatório técnico em Markdown ([`REPORT.md`](REPORT.md)).
   - Planilha de tabelas formatadas para publicação ([`results/tabelas_manuscrito.xlsx`](results/tabelas_manuscrito.xlsx)).
 
 ---
 
-## 2. Planejamento para as Fases Posteriores (Meses 13–24)
+## 2. Planejamento para as Fases Posteriores
 
-Com a arquitetura analítica pronta e homologada, os próximos passos do pós-doutorado da Dra. Bianca e do Dr. Ulrich seguirão o seguinte cronograma:
+Com a arquitetura analítica pronta e homologada, as próximas etapas seguirão o seguinte cronograma:
 
-### Etapa 2.1: Redação e Submissão do Artigo 1 (Manuscrito Continental)
-* **Objetivo:** Submeter o artigo focado no potencial preditivo continental do microbioma e a dissociação da sensibilidade edáfica entre bactérias e fungos.
+### Etapa 2.1: Redação e Submissão do Manuscrito Continental
+* **Objetivo:** Submeter artigo focado no potencial preditivo continental do microbioma e a dissociação da sensibilidade edáfica entre bactérias e fungos.
 * **Periódicos Alvo:** *Soil Biology and Biochemistry*, *Microbiome* ou *Geoderma*.
-* **Recursos Disponíveis:** As 5 tabelas prontas em `results/tabelas_manuscrito.xlsx` e as figuras em alta resolução do relatório técnico.
+* **Recursos Disponíveis:** As 5 tabelas prontas em `results/tabelas_manuscrito.xlsx` e as métricas consolidadas em `REPORT.md`.
 
-### Etapa 2.2: Integração do Benchmark Tropical Brasileiro (Manguezais / PRJNA283936)
-* **Objetivo:** Avaliar a transferibilidade da esteira metodológica em biomas costeiros e tropicais brasileiros.
+### Etapa 2.2: Integração do Benchmark Tropical (Manguezais / PRJNA283936)
+* **Objetivo:** Avaliar a transferibilidade da esteira metodológica em biomas costeiros e tropicais.
 * **Metodologia:**
   * Ingestão das matrizes de ASVs e metadados de salinidade/pH do BioProject `PRJNA283936`.
   * Execução do mesmo protocolo de validação espacial e testes de hipótese ($H_0$).
@@ -63,6 +59,5 @@ Com a arquitetura analítica pronta e homologada, os próximos passos do pós-do
 ## 3. Estado de Prontidão da Infraestrutura Computacional
 
 Toda a árvore do código foi consolidada em módulos independentes e reutilizáveis dentro de `src/`:
-- Qualquer nova matriz de contagens ou distâncias (seja de novos biomas brasileiros ou novas coortes públicas) pode ser plugada diretamente através de `src/models/feature_builder.py` e `src/spatial_cv/spatial_partitioner.py`.
+- Qualquer nova matriz de contagens ou distâncias (seja de novos biomas tropicais ou novas coortes públicas) pode ser plugada diretamente através de `src/models/feature_builder.py` e `src/spatial_cv/spatial_partitioner.py`.
 - O repositório está limpo, estável e pronto para arquivamento ou versionamento contínuo em Git.
-
