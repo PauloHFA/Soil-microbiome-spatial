@@ -10,8 +10,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 license = {text = "MIT"}
 authors = [
-    {name = "Dra. Bianca Teixeira Morais de Oliveira"},
-    {name = "Dr. Ulrich Vasconcelos"}
+    {name = "Soil Microbiome Spatial Research"}
 ]
 keywords = [
     "microbiome",
