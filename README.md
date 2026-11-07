@@ -2,6 +2,7 @@
 
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
 [![Tests Passing](https://img.shields.io/badge/tests-328%20passed-success.svg)](tests/)
+[![GitHub Pages](https://img.shields.io/badge/Live%20Report-GitHub%20Pages-brightgreen.svg?logo=github)](https://paulohfa.github.io/Soil-microbiome-spatial/)
 [![Validation](https://img.shields.io/badge/Spatial%20CV-Zero%20Data%20Leakage-green.svg)](src/spatial_cv/)
 [![Data](https://img.shields.io/badge/Cohort-715%20Paired%20Sites-orange.svg)](data/real_cohort_715/)
 [![Open Science](https://img.shields.io/badge/Data%20Source-LUCAS%202018%20%7C%20ESDAC-blueviolet.svg)](https://esdac.jrc.ec.europa.eu/)
@@ -243,9 +244,12 @@ python scripts/gerar_dashboard_real.py
 
 ## 📑 Acesso aos Relatórios e Resultados
 
+> 🚀 **Website Interativo Online:** Acesse o relatório completo e os painéis interativos diretamente no navegador pelo GitHub Pages:  
+> **👉 [https://paulohfa.github.io/Soil-microbiome-spatial/](https://paulohfa.github.io/Soil-microbiome-spatial/)**
+
+* 🌐 **[Relatório Técnico-Científico Interativo (Web)](https://paulohfa.github.io/Soil-microbiome-spatial/)**: Relatório com navegação e os 6 gráficos analíticos interativos em Plotly.
+* 📊 **[Painel Analítico de Modelagem (Dashboard)](https://paulohfa.github.io/Soil-microbiome-spatial/dashboard.html)**: Visualização interativa focada nos 5 modelos preditivos e matriz de confusão.
 * 📕 **[Relatório Completo em PDF](results/RELATORIO_TECNICO_CIENTIFICO.pdf)**: Documento de 1,25 MB com diagramação formal, pronto para leitura e impressão.
-* 🌐 **[Relatório Técnico em HTML](results/RELATORIO_TECNICO_CIENTIFICO.html)**: Relatório completo com os 6 gráficos interativos em Plotly.
-* 📊 **[Painel Analítico de Modelagem (Dashboard)](results/dashboard_report_715_real.html)**: Visualização interativa dos 5 modelos e da matriz de confusão.
 * 📝 **[Relatório em Markdown Nativo (`REPORT.md`)](REPORT.md)**: Versão textual completa renderizada diretamente no GitHub.
 * 📗 **[Planilha com as Tabelas do Artigo (`tabelas_manuscrito.xlsx`)](results/tabelas_manuscrito.xlsx)**: 5 abas prontas para inclusão em manuscritos científicos.
 
