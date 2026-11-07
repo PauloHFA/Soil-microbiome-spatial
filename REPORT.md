@@ -89,3 +89,4 @@ Avaliação da porcentagem de variação beta das comunidades microbianas explic
 2. **Papel Singular da Comunidade Fúngica**: Os fungos (ITS) apresentaram a maior acurácia balanceada individual (46,7%), refletindo uma associação simbiótica e saprotrófica mais estreita e restrita com as espécies vegetais dominantes de cada fitofisionomia.
 3. **Dissociação Bacteriana vs. Fúngica em Relação ao pH**: A PERMANOVA demonstrou que o pH é a variável mestra determinante para as bactérias ($R^2 = 18,2\%$), ao passo que os fungos toleram variações de acidez com plasticidade muito maior ($R^2 = 3,7\%$).
 4. **Princípio de Parsimônia ($H_0$ aceita)**: Como o marcador fúngico isolado alcança desempenho estatisticamente indistinguível da integração multi-marcador ($p = 0,406$), o perfil de ITS isolado se apresenta como a escolha mais custo-efetiva para programas de monitoramento de vegetação em escala continental.
+

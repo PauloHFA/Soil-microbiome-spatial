@@ -103,10 +103,13 @@ python scripts/gerar_tabelas_manuscrito.py
 
 ---
 
-## 📑 Acesso aos Resultados Principais
+## 📑 Acesso aos Resultados e Relatórios
 
-* 📄 **Relatório Técnico Completo**: Consulte diretamente no repositório o arquivo [`REPORT.md`](REPORT.md).
-* 📗 **Tabelas para Artigo (Excel)**: Planilha formatada pronta para publicação em [`results/tabelas_manuscrito.xlsx`](results/tabelas_manuscrito.xlsx).
+* 📕 **Relatório Completo em PDF (Pronto para Visualização e Impressão)**: [`results/RELATORIO_TECNICO_CIENTIFICO.pdf`](results/RELATORIO_TECNICO_CIENTIFICO.pdf)
+* 🌐 **Relatório Técnico Interativo em HTML (com gráficos Plotly integrados)**: [`results/RELATORIO_TECNICO_CIENTIFICO.html`](results/RELATORIO_TECNICO_CIENTIFICO.html)
+* 📊 **Painel Analítico de Modelagem (Dashboard HTML)**: [`results/dashboard_report_715_real.html`](results/dashboard_report_715_real.html)
+* 📄 **Relatório Técnico em Markdown (Nativo do GitHub)**: [`REPORT.md`](REPORT.md)
+* 📗 **Tabelas Estatísticas Formatadas (Excel para Manuscrito)**: [`results/tabelas_manuscrito.xlsx`](results/tabelas_manuscrito.xlsx)
 
 ---
 

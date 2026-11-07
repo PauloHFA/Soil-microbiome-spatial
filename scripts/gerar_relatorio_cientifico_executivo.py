@@ -477,11 +477,11 @@ def main():
 
 <header>
   <div class="container">
-    <div class="kicker">Universidade Federal da Paraíba · CBiotec · LAMA · Projeto de Pós-Doutorado</div>
+    <div class="kicker">Estudo Computacional de Metagenômica & Ecologia do Solo · Dados Abertos</div>
     <h1>Discriminação Espacial Multimodal de Solos Europeus: Integração de Perfis Metagenômicos e Propriedades Edáficas</h1>
     <p class="subtitle">Relatório Técnico-Científico avaliando o potencial discriminatório de perfis taxonômicos de bactérias (16S rRNA), fungos (ITS) e atributos físico-químicos do solo (LUCAS 2018 / ESDAC) sob Validação Cruzada Espacial Estrita.</p>
     <div class="meta-bar">
-      <div class="meta-item"><strong>Pesquisadores:</strong> Dra. Bianca e Dr. Ulrich</div>
+      <div class="meta-item"><strong>Iniciativa:</strong> Estudo Metodológico em Metagenômica Ambiental</div>
       <div class="meta-item"><strong>Coorte:</strong> 715 Sítios Pareados (24 Países)</div>
       <div class="meta-item"><strong>Bases:</strong> BioProject PRJNA952168 & ESDAC LUCAS 2018</div>
       <div class="meta-item"><strong>Data:</strong> Outubro de 2026</div>
@@ -524,7 +524,7 @@ def main():
   <!-- SECTION 1: INTRODUÇÃO -->
   <div class="card-section">
     <h2>1. Introdução & Contexto Científico</h2>
-    <p>O presente estudo computacional implementa e valida os objetivos metodológicos centrais da proposta de pós-doutorado da <strong>Dra. Bianca</strong> e do <strong>Dr. Ulrich</strong>. O cerne científico da investigação é responder: <em>Assinaturas microbianas do solo (bactérias e fungos) possuem capacidade de discriminar categorias de uso e cobertura do solo em escala continental? A integração multi-marcador supera os marcadores isolados quando submetida a um regime rigoroso de validação espacial? Como as variáveis físico-químicas de solo (pH, matéria orgânica, textura) modulam esse poder discriminante?</em></p>
+    <p>O presente estudo computacional implementa e valida um arcabouço analítico estrito para responder a três perguntas centrais da metagenômica de solos: <em>(1) Assinaturas microbianas do solo (bactérias e fungos) possuem capacidade de discriminar categorias de uso e cobertura do solo em escala continental? (2) A integração multi-marcador supera os marcadores isolados quando submetida a um regime rigoroso de validação espacial? (3) Como as variáveis físico-químicas de solo (pH, matéria orgânica, textura) modulam esse poder discriminante?</em></p>
     
     <div class="callout">
       <h4>💡 Principais Conclusões Científicas:</h4>
@@ -700,7 +700,7 @@ def main():
   <!-- SECTION 6: RELEVÂNCIA E PRÓXIMOS PASSOS -->
   <div class="card-section">
     <h2>6. Relevância & Próximos Passos para a Pesquisa</h2>
-    <p>Este arcabouço computacional e analítico oferece à pesquisa de pós-doutorado da Dra. Bianca e do Dr. Ulrich:</p>
+    <p>Este arcabouço computacional e analítico oferece à pesquisa:</p>
     <ol>
       <li><strong>Reprodutibilidade Total:</strong> Todo o pipeline opera de ponta a ponta em Python com sementes fixadas (seed 42), suíte automatizada de testes unitários e de integração (328 testes passando), em conformidade com os padrões de ciência aberta para submissão a periódicos internacionais de alto impacto.</li>
       <li><strong>Fundamentação Teórica e Empírica:</strong> A dissociação estatística entre o efeito controlador do pH sobre as bactérias ($R^2 = 18,2\%$) versus a estabilidade dos fungos ($R^2 = 3,7\%$), combinada com a equivalência preditiva da integração multi-marcador ($H_0$), fornece uma sólida base para publicação científica.</li>
@@ -712,7 +712,7 @@ def main():
 
 <footer style="background:#0f172a; color:#94a3b8; padding:30px 0; text-align:center; font-size:14px; border-top:1px solid #334155;">
   <div class="container" style="padding:0 24px;">
-    Laboratório de Micologia e Metagenômica Ambiental (LAMA) · Centro de Biotecnologia (CBiotec) · UFPB · 2026
+    Pipeline de Modelagem Espacial Multimodal · Consórcio LUCAS / ESDAC · 2026
   </div>
 </footer>
 

@@ -1,8 +1,8 @@
 # Contrato da especificação revisada
 
-Fonte normativa única: `PROJETO_POS_DOC_BIANCA_REVISADO.pdf` (18 páginas).
+Fonte normativa única: Especificação Técnica do Projeto (18 páginas).
 
-Não normativo: `PROJETO PÓS-DOC_BIANCA_ULRICH_2026.pdf`. Números, prazos e desenhos que só aparecem nesse arquivo não obrigam o código.
+Não normativo: Rascunhos e versões preliminares. Números, prazos e desenhos que só aparecem em arquivos preliminares não obrigam o código.
 
 O texto abaixo não acrescenta regra. Só registra as cláusulas do PDF revisado que o fluxo analítico tem de obedecer.
 

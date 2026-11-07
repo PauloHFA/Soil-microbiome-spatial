@@ -63,7 +63,7 @@ The project implements an end-to-end computational pipeline for postdoctoral res
 ## Code Layout
 
 ```
-c:\Projetos\ProjetoPosDocBianca\
+Soil-microbiome-spatial/
 ├── config/
 │   └── pipeline_config.yaml         # Pinned parameters, seeds, paths, thresholds
 ├── src/
